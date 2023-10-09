@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Kombinasyon_Hesaplayan_Program {
     public static void main(String[]args){
-        int n,r,nfak = 1, rfak = 1, C,nrfak = 1;
+        int n,r,nfak = 1, rfak = 1,nrfak = 1;
         Scanner input = new Scanner(System.in);
         System.out.print("Eleman sayısını giriniz (n) : ");
         n = input.nextInt();
@@ -17,7 +17,7 @@ public class Kombinasyon_Hesaplayan_Program {
         for (int i = 1; i <= n - r; i++){
             nrfak = nrfak * i;
         }
-        int sonuc = nfak / (rfak*nrfak);
+        int sonuc = nfak / (rfak * nrfak);
         System.out.println("C(" + n + "," + r + ") = " + sonuc);
 
     }
